@@ -11,7 +11,7 @@ function App() {
   const getAudioList = async () => {
     setLoading(true);
     const response = await fetch(
-      "http://localhost:8000/api/audiobook/getAudiobooks"
+      "https://shy-blue-magpie-wrap.cyclic.app/api/audiobook/getAudiobooks"
     );
     const data = await response.json();
     setAudiobooks(data.audiobooks);
